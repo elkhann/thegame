@@ -6,8 +6,8 @@ const Enemy = ({ enemy }) => {
 			Enemy info:
 			<div>Name: {enemy.name}</div>
 			<div>HP:{`${enemy.hp}/${enemy.maxHp}`}</div>
-			<div>{enemy.attack}</div>
-			<div>{enemy.def}</div>
+			<div>Attack: {enemy.attack}</div>
+			<div>Defence: {enemy.def}</div>
 		</div>
 	);
 };
