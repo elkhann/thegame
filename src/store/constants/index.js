@@ -6,3 +6,6 @@ export const CHANGE_VAMP_HP = 'CHANGE_VAMP_HP';
 export const CHANGE_ENEMY_HP = 'CHANGE_ENEMY_HP';
 export const ADD_100_HP = 'ADD_100_HP';
 export const CREATE_ENEMY = 'CREATE_ENEMY';
+
+export const VDAMAGE = 'VDAMAGE';
+export const EDAMAGE = 'EDAMAGE';

@@ -4,16 +4,16 @@ import { connect } from 'react-redux';
 
 import Vamp from '../components/Vamp';
 
-const VampContainer = ({ vamp }) => {
+const VampContainer = ({ vamp, enemy }) => {
 	return (
 		<div>
-			<Vamp vamp={vamp} />
+			<Vamp vamp={vamp} enemy={enemy} />
 		</div>
 	);
 };
 
-const mapStateToProps = ({ vamp }) => {
-	return { vamp };
+const mapStateToProps = ({ vamp, enemy }) => {
+	return { vamp, enemy };
 };
 
 // const mapDispatchToProps = (dispatch) => {};

@@ -4,16 +4,16 @@ import { connect } from 'react-redux';
 
 import Enemy from '../components/Enemy';
 
-const EnemyContainer = ({ enemy }) => {
+const EnemyContainer = ({ vamp, enemy }) => {
 	return (
 		<div>
-			<Enemy enemy={enemy} />
+			<Enemy enemy={enemy} vamp={vamp} />
 		</div>
 	);
 };
 
-const mapStateToProps = ({ enemy }) => {
-	return { enemy };
+const mapStateToProps = ({ vamp, enemy }) => {
+	return { vamp, enemy };
 };
 
 // const mapDispatchToProps = (dispatch) => {};

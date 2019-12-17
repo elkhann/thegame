@@ -5,7 +5,9 @@ import {
 	CHANGE_VAMP_HP,
 	CHANGE_ENEMY_HP,
 	ADD_100_HP,
-	CREATE_ENEMY
+	CREATE_ENEMY,
+	VDAMAGE,
+	EDAMAGE
 } from '../constants/';
 
 export const startFight = () => {
@@ -54,5 +56,19 @@ export const addHp = () => {
 export const nextEnemy = () => {
 	return {
 		type: CREATE_ENEMY
+	};
+};
+
+export const setVDamage = (damage) => {
+	return {
+		type: VDAMAGE,
+		payload: damage
+	};
+};
+
+export const setEDamage = (damage) => {
+	return {
+		type: EDAMAGE,
+		payload: damage
 	};
 };
